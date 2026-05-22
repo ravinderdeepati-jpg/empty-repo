@@ -1,5 +1,5 @@
 # SWETHA SUHASINI INDUR
-**Medical Writer | Life Sciences Graduate (B.Pharm)**
+**Medical Writer | Pharmacy Postgraduate (M.Pharm, B.Pharm)**
 
 Hyderabad, India | +91 8897537810 | indurswethasuhasini1@gmail.com
 Languages: English (Professional), Telugu, Hindi
@@ -8,7 +8,7 @@ Languages: English (Professional), Telugu, Hindi
 
 ## PROFESSIONAL PROFILE
 
-Life-sciences graduate (Bachelor of Pharmacy) with a strong foundation in pharmacology, clinical research, pharmaceutical operations, and healthcare data interpretation, seeking a **Medical Writer** role with Fortrea Patient Access (FPA). Skilled in researching scientific literature, synthesising clinical and economic evidence, and translating complex data into clear, audience-appropriate written content. Experienced in working in a fast-paced, client-facing environment requiring accuracy, organisation, and effective stakeholder communication. Comfortable with both **American and UK English** spelling and grammar conventions, and proficient with **MS Word, Excel, PowerPoint, Outlook, and EndNote** for content development, referencing, and project delivery.
+**Pharmacy postgraduate** (Master of Pharmacy, CGPA 8.55) with a strong foundation in pharmacology, clinical research, pharmaceutical operations, biostatistics, and healthcare data interpretation, seeking a **Medical Writer** role with Fortrea Patient Access (FPA). Skilled in researching scientific literature, synthesising clinical and economic evidence, and translating complex data into clear, audience-appropriate written content. Experienced in client-facing environments requiring accuracy, organisation, and effective stakeholder communication. Comfortable with both **American and UK English** conventions and proficient with **MS Word, Excel, PowerPoint, Outlook, and EndNote**.
 
 ---
 
@@ -26,10 +26,15 @@ Life-sciences graduate (Bachelor of Pharmacy) with a strong foundation in pharma
 
 ## EDUCATION
 
-**Bachelor of Pharmacy (B.Pharm)** — *RBVRR Women's College of Pharmacy*  | Feb 2019 – Feb 2023
+**Master of Pharmacy (M.Pharm)** | 2023 – 2025
+- CGPA: 8.55
+- Advanced postgraduate training in pharmaceutical sciences, including research methodology, advanced pharmacology, biostatistics, and dissertation-level scientific writing — directly relevant to the research, analysis, and writing demands of a Medical Writer role.
+- Strengthened ability to critically appraise clinical literature, design structured reviews, and present complex pharmaceutical data in a clear, audience-appropriate manner.
+
+**Bachelor of Pharmacy (B.Pharm)** — *RBVRR Women's College of Pharmacy* | Feb 2019 – Feb 2023
 - CGPA: 7.44
-- Coursework: Pharmacology, Pharmaceutical Analysis, Pharmacokinetics, Biostatistics, Pharmacotherapeutics, Pharmaceutical Regulatory Affairs, Clinical Pharmacy
-- Built a strong foundation in interpreting clinical literature, drug development pathways, regulatory/reimbursement processes, and health-related research
+- Coursework: Pharmacology, Pharmaceutical Analysis, Pharmacokinetics, Biostatistics, Pharmacotherapeutics, Pharmaceutical Regulatory Affairs, Clinical Pharmacy.
+- Built a strong foundation in interpreting clinical literature, drug development pathways, regulatory/reimbursement processes, and health-related research.
 
 **Intermediate (BiPC)** — *ARS Junior College* | Feb 2018 – Feb 2019
 
@@ -39,6 +44,7 @@ Life-sciences graduate (Bachelor of Pharmacy) with a strong foundation in pharma
 
 ## RELEVANT PROJECTS & ACADEMIC WRITING
 
+- **M.Pharm dissertation & advanced research project** — Designed a structured research study, conducted in-depth literature searches across PubMed and peer-reviewed journals, applied biostatistical analysis, and produced a full-length dissertation with rigorously formatted references.
 - **Final-year B.Pharm research project** — Conducted literature search across PubMed and peer-reviewed journals, critically appraised study design and statistical outputs, and prepared a structured written report with accurately formatted references.
 - **Therapy-area literature reviews** — Rapidly familiarised myself with new therapeutic areas, identified credible data sources, and summarised clinical evidence for academic submissions.
 - **Scientific presentations** — Designed and delivered PowerPoint presentations to faculty and peers, translating technical pharmaceutical content into clear, audience-appropriate messaging.
@@ -51,11 +57,11 @@ Life-sciences graduate (Bachelor of Pharmacy) with a strong foundation in pharma
 ### Customer Support Specialist — *Accenture*
 *Nov 2023 – Present*
 
-Client-facing role supporting a healthcare/services account, applying many of the skills core to a Medical Writer position:
+Client-facing role applying skills directly transferable to a Medical Writer position:
 
-- **Stakeholder communication:** Interact daily with clients/customers in a clear, concise, and professional manner — both verbally and in written correspondence.
+- **Stakeholder communication:** Interact daily with clients in a clear, concise, professional manner — both verbal and written.
 - **Information management:** Research, interpret, and accurately relay information to resolve queries; maintain detailed, accurate records of every interaction.
-- **Time & project management:** Juggle multiple cases simultaneously, prioritise workload against SLAs, and proactively flag delays — directly transferable to managing concurrent writing deliverables.
+- **Time & project management:** Juggle multiple cases against SLAs, prioritise workload, and proactively flag delays — directly transferable to managing concurrent writing deliverables.
 - **Team collaboration:** Work closely with team members and team leaders, share knowledge, and proactively offer support when capacity allows.
 - **Quality & accuracy:** Apply attention to detail and proofreading discipline to written communications; follow process documentation and implement directive changes with minimal supervision.
 - **Tools:** MS Outlook (scheduling, correspondence), MS Word, Excel, internal CRM and clinical/operational applications.
