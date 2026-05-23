@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { useSession, signOut } from "next-auth/react";
+import { Menu, X, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
@@ -13,6 +14,9 @@ const navLinks = [
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { data: session, status } = useSession();
+
+  const isAuthenticated = status === "authenticated";
 
   return (
     <header className="sticky top-0 z-50 border-b border-border backdrop-blur bg-background/80">
@@ -40,12 +44,39 @@ export function Header() {
 
           {/* Desktop buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
-            <Button variant="primary" size="sm">
-              Get Started
-            </Button>
+            {isAuthenticated ? (
+              <>
+                <span className="text-sm text-foreground/70">
+                  {session.user?.name || session.user?.email}
+                </span>
+                <Link href="/dashboard">
+                  <Button variant="ghost" size="sm">
+                    Dashboard
+                  </Button>
+                </Link>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  onClick={() => signOut({ callbackUrl: "/" })}
+                >
+                  <LogOut size={16} className="mr-1.5" />
+                  Sign Out
+                </Button>
+              </>
+            ) : (
+              <>
+                <Link href="/sign-in">
+                  <Button variant="ghost" size="sm">
+                    Sign In
+                  </Button>
+                </Link>
+                <Link href="/sign-up">
+                  <Button variant="primary" size="sm">
+                    Get Started
+                  </Button>
+                </Link>
+              </>
+            )}
           </div>
 
           {/* Mobile menu button */}
@@ -73,12 +104,38 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 pt-2">
-                <Button variant="ghost" size="sm">
-                  Sign In
-                </Button>
-                <Button variant="primary" size="sm">
-                  Get Started
-                </Button>
+                {isAuthenticated ? (
+                  <>
+                    <span className="text-sm text-foreground/70 px-3 py-1.5">
+                      {session.user?.name || session.user?.email}
+                    </span>
+                    <Link href="/dashboard" onClick={() => setMobileMenuOpen(false)}>
+                      <Button variant="ghost" size="sm" className="w-full">
+                        Dashboard
+                      </Button>
+                    </Link>
+                    <Button
+                      variant="secondary"
+                      size="sm"
+                      onClick={() => signOut({ callbackUrl: "/" })}
+                    >
+                      Sign Out
+                    </Button>
+                  </>
+                ) : (
+                  <>
+                    <Link href="/sign-in" onClick={() => setMobileMenuOpen(false)}>
+                      <Button variant="ghost" size="sm" className="w-full">
+                        Sign In
+                      </Button>
+                    </Link>
+                    <Link href="/sign-up" onClick={() => setMobileMenuOpen(false)}>
+                      <Button variant="primary" size="sm" className="w-full">
+                        Get Started
+                      </Button>
+                    </Link>
+                  </>
+                )}
               </div>
             </nav>
           </div>
