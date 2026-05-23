@@ -1,0 +1,29 @@
+{
+  "id": "FEAT-001",
+  "type": "chore",
+  "description": "Scaffold the Next.js 14+ project with TypeScript, Tailwind CSS, App Router, and all necessary dependencies for the BrainFog.mov platform.",
+  "status": "in_progress",
+  "steps": [
+    "Initialize a Next.js 14+ project in /projects/sandbox/empty-repo using create-next-app with TypeScript, Tailwind CSS, ESLint, App Router, and src/ directory. Use --use-npm flag. If create-next-app prompts are an issue, manually scaffold the project.",
+    "Install additional dependencies: next-auth (for authentication), lucide-react (for icons), clsx and tailwind-merge (for className utilities), framer-motion (for animations)",
+    "Configure Tailwind CSS with a dark theme as default, custom colors for branding (vibrant purple/pink/cyan accent colors on dark backgrounds)",
+    "Set up the base layout in src/app/layout.tsx with proper metadata for BrainFog.mov (title, description, favicon placeholder)",
+    "Create a utility file src/lib/utils.ts with a cn() className merge helper",
+    "Create a basic src/app/globals.css with Tailwind directives and any custom CSS variables for the brand colors",
+    "Update the README.md to describe the BrainFog.mov project",
+    "Verify the project builds successfully with npm run build"
+  ],
+  "acceptance_criteria": [
+    "npm run build completes without errors",
+    "npm run lint passes",
+    "The project has TypeScript configured with strict mode",
+    "Tailwind CSS is configured with custom brand colors",
+    "All specified dependencies are installed in package.json"
+  ],
+  "verification": [
+    "npm run build",
+    "npm run lint"
+  ],
+  "blocked_reason": null,
+  "findings": ""
+}

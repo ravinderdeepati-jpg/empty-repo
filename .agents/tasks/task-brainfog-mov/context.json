@@ -1,0 +1,16 @@
+{
+  "project_type": "Next.js 14+ App Router full-stack web application",
+  "language": "TypeScript",
+  "build_system": "npm with Next.js built-in build system",
+  "test_framework": "N/A - greenfield project, no tests initially",
+  "build_command": "npm run build",
+  "test_command": "npm run lint",
+  "verification_instructions": "1. Run npm install to install dependencies. 2. Run npm run build to verify the project compiles. 3. Run npm run lint to check for linting errors.",
+  "snapshot_or_generated_files": null,
+  "setup_instructions": "1. cd /projects/sandbox/empty-repo. 2. npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias '@/*' --use-npm (or manual setup). 3. npm install additional dependencies.",
+  "environment_constraints": "Node.js v22.22.3, npm 11.4.2. OPEN_INTERNET network mode - full access to npm registry and external APIs. No Docker needed - target is Vercel free tier deployment.",
+  "contribution_requirements": "None - greenfield project",
+  "key_patterns": "Next.js App Router with TypeScript, Tailwind CSS, server components by default, client components where needed for interactivity",
+  "relevant_files": [],
+  "directory_structure": "Empty repo with only .gitignore and README.md. Will scaffold a Next.js project with src/ directory structure."
+}
