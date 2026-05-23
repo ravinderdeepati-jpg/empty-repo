@@ -1,0 +1,11 @@
+{
+  "id": "FEAT-003",
+  "type": "feature",
+  "description": "Authentication with NextAuth.js",
+  "status": "completed",
+  "steps": [],
+  "acceptance_criteria": [],
+  "verification": [],
+  "blocked_reason": null,
+  "findings": "Next.js 16 deprecated the middleware file convention. Had to use an explicit named 'middleware' export with getToken from next-auth/jwt instead of 'export { default } from next-auth/middleware'. Also needed a Suspense boundary for sign-in page because it uses useSearchParams(). The .env* pattern in .gitignore requires force-adding .env.local.example."
+}
