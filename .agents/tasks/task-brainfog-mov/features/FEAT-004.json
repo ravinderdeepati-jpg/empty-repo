@@ -2,10 +2,10 @@
   "id": "FEAT-004",
   "type": "feature",
   "description": "Placeholder for FEAT-004",
-  "status": "pending",
+  "status": "completed",
   "steps": [],
   "acceptance_criteria": [],
   "verification": [],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "Used useSyncExternalStore instead of useState+useEffect for reading localStorage values to satisfy React 19's react-hooks/set-state-in-effect lint rule. The Next.js 16 middleware deprecation warning is pre-existing from FEAT-003. The API route params type in Next.js 16 uses Promise<{id: string}> and requires await."
 }
