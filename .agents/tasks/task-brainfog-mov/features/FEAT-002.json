@@ -1,11 +1,11 @@
 {
   "id": "FEAT-002",
   "type": "feature",
-  "description": "Placeholder for FEAT-002",
-  "status": "pending",
+  "description": "Build the landing page, pricing page, and shared layout components.",
+  "status": "completed",
   "steps": [],
   "acceptance_criteria": [],
   "verification": [],
   "blocked_reason": null,
-  "findings": ""
+  "findings": "All components built successfully with Tailwind v4 classes (text-primary, bg-surface, border-border, etc.). framer-motion works well for entrance animations with the motion component. Both pages render as static content in Next.js 16. Build and lint pass cleanly."
 }
