@@ -1,5 +1,6 @@
 import CredentialsProvider from "next-auth/providers/credentials";
 import GoogleProvider from "next-auth/providers/google";
+import bcrypt from "bcryptjs";
 import type { NextAuthOptions } from "next-auth";
 
 // In-memory user store for MVP demo purposes
@@ -16,7 +17,7 @@ const users: StoredUser[] = [
     id: "1",
     name: "Demo User",
     email: "demo@brainfog.mov",
-    password: "demo123",
+    password: bcrypt.hashSync("demo123", 10),
   },
 ];
 
@@ -51,7 +52,8 @@ export const authOptions: NextAuthOptions = {
           return null;
         }
 
-        if (user.password !== credentials.password) {
+        const isValid = await bcrypt.compare(credentials.password, user.password);
+        if (!isValid) {
           return null;
         }
 

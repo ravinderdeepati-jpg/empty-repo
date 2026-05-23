@@ -55,11 +55,14 @@ export function getVideoHistory(): VideoHistoryItem[] {
   }
 }
 
+const MAX_HISTORY_ITEMS = 50;
+
 export function addVideoToHistory(item: VideoHistoryItem): void {
   if (typeof window === "undefined") return;
   const history = getVideoHistory();
   history.unshift(item);
-  localStorage.setItem(KEYS.videoHistory, JSON.stringify(history));
+  const trimmed = history.slice(0, MAX_HISTORY_ITEMS);
+  localStorage.setItem(KEYS.videoHistory, JSON.stringify(trimmed));
 }
 
 export function updateVideoInHistory(

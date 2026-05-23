@@ -1,8 +1,23 @@
 import { NextResponse } from "next/server";
+import { getServerSession } from "next-auth";
+import { authOptions } from "@/lib/auth";
 import { startVideoGeneration } from "@/lib/replicate";
 
 export async function POST(request: Request) {
   try {
+    const session = await getServerSession(authOptions);
+    if (!session) {
+      return NextResponse.json(
+        { error: "Unauthorized" },
+        { status: 401 }
+      );
+    }
+
+    // TODO: Enforce server-side rate limiting per user for production.
+    // The client-side daily limit is acceptable for MVP but can be bypassed
+    // by calling this endpoint directly. A proper implementation would track
+    // usage in a database keyed by session.user.id.
+
     const body = (await request.json()) as {
       prompt?: string;
       style?: string;

@@ -1,5 +1,12 @@
 const REPLICATE_API_URL = "https://api.replicate.com/v1/predictions";
 
+/** Model version hash for minimax/video-01-live (text-to-video model) */
+const REPLICATE_MODEL_VERSION =
+  "c0a4015dc68a6da82e26aa02e1b0704c2634816495550a1e4e22e10b8e4b02c4";
+
+/** Frames per second produced by the video model; used to calculate num_frames from duration */
+const MODEL_FPS = 8;
+
 const STYLE_MODIFIERS: Record<string, string> = {
   "Brainrot Classic":
     "in a fast-paced brainrot meme style with zooming effects and chaotic energy",
@@ -35,11 +42,10 @@ export async function startVideoGeneration(params: {
       Prefer: "wait",
     },
     body: JSON.stringify({
-      version:
-        "c0a4015dc68a6da82e26aa02e1b0704c2634816495550a1e4e22e10b8e4b02c4",
+      version: REPLICATE_MODEL_VERSION,
       input: {
         prompt: enhancedPrompt,
-        num_frames: params.duration * 8,
+        num_frames: params.duration * MODEL_FPS,
         aspect_ratio: params.aspectRatio,
       },
     }),

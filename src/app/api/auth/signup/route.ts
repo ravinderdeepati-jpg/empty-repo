@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import bcrypt from "bcryptjs";
 import { addUser, findUserByEmail } from "@/lib/auth";
 
 export async function POST(request: Request) {
@@ -21,7 +22,8 @@ export async function POST(request: Request) {
       );
     }
 
-    const user = addUser({ name, email, password });
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const user = addUser({ name, email, password: hashedPassword });
 
     return NextResponse.json(
       { message: "User created", user: { id: user.id, name: user.name, email: user.email } },
