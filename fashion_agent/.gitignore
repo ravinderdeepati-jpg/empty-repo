@@ -1,0 +1,19 @@
+# Working directories – generated artefacts, not source
+input_photos/*
+masks/*
+generated_outfits/*
+processed_images/*
+final_videos/*
+offline_docs/*
+models/*
+memory/*
+
+# but keep the folders themselves
+!*/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
