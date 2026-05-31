@@ -1,0 +1,30 @@
+# Vane (formerly Perplexica) - private, hybrid AI search assistant.
+#
+# This runs the ALL-IN-ONE Vane image, which already bundles the SearXNG
+# meta-search engine. You do NOT need a separate SearXNG container.
+#
+# Ollama is intentionally NOT run in Docker here. Run Ollama natively on your
+# laptop so it can use your Quadro M1200 GPU. The "extra_hosts" line below lets
+# this container reach your native Ollama at http://host.docker.internal:11434
+# on Windows, macOS, AND Linux.
+#
+# Start with:  docker compose up -d   (or use the scripts in ./scripts)
+# Then open:   http://localhost:3000
+
+services:
+  vane:
+    image: itzcrazykns1337/vane:latest
+    container_name: vane
+    ports:
+      - "3000:3000"
+    volumes:
+      # Persists your settings, chat history and uploaded files across restarts.
+      - vane-data:/home/vane/data
+    extra_hosts:
+      # Maps host.docker.internal -> your host machine, so the container can
+      # reach native Ollama. Required for Linux; harmless on Windows/macOS.
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+volumes:
+  vane-data:
